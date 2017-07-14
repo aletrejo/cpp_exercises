@@ -11,12 +11,12 @@
 using namespace std;
 
 int main(){
-  string theTruth = "'Ale is awesome!'";
-  string* pStr = &theTruth; //pointer to string
+  string theTruth = "Ale is awesome!";
+  string *pStr = &theTruth; //pointer to string
 
-  string* p2pStr = pStr; //pointer to pointer to string
+  string **p2pStr = &pStr; //pointer to pointer to string
 
-  cout << "The size of the string: " << theTruth << " is " << p2pStr->size() << endl;
+cout << "The size of the string: '" << theTruth << "' is " << (*p2pStr)->size()<< endl;
 
 
 }
