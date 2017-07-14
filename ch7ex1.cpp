@@ -18,5 +18,5 @@ int main(){
 
 cout << "The size of the string: '" << theTruth << "' is " << (*p2pStr)->size()<< endl;
 
-
+return 0;
 }
