@@ -19,15 +19,10 @@ int main()
     cout << "Answer the following questions to help create a new story.\n";
 
     string name = askText("Please enter a name: ");
-    string& rName = name;
     string noun = askText("Please enter a plural noun: ");
-    string& rNoun = noun;
     int number = askNumber("Please enter a number: ");
-    int& rNumber = number;
     string bodyPart = askText("Please enter a body part: ");
-    string& rBodyPart = bodyPart;
     string verb = askText("Please enter a verb: ");
-    string& rVerb = verb;
 
     tellStory(name, noun, number, bodyPart, verb);
 
